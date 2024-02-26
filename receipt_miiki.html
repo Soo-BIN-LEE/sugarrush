@@ -1,0 +1,129 @@
+
+  <html lang="ko">
+  <div id="invoice-POS">
+    <link rel="stylesheet" href="receipt_template_miiki.css">
+    
+    <!-- 상단 로고 -->
+    <center id="top"> 
+      <div class="logo"></div>
+      <div class="info"> 
+        <h2>HAYAKU HEBARE CLUB</br>
+            X</br>
+            Sugar Rush
+      </h2>
+      </div><!--End Info-->
+    </center><!--End InvoiceTop-->
+    
+    <!-- 중간(주문자 정보) -->
+    <div id="mid">
+      <div class="info">
+        <p>
+            #{{ order_num }}</br>
+            <strong style = " color: #222;">주문자: {{ namendigit }}</strong></br>
+            주문일시: {{ date }} </br>
+            수령일자: 2024.02.24 </br>
+        </p>
+      </div>
+    </div><!--End Invoice Mid-->
+    
+    <!-- 구매내역 -->
+    <div id="bot">
+
+		<div id="table">
+			<table>
+				<tr class="tabletitle">
+					<td class="item"><h2>Item</h2></td>
+					<td class=""><h2>Cost</h2></td>
+                    <td class="Qty"><h2>Qty</h2></td>
+					<td class="Rate"><h2>Amount</h2></td>
+				</tr>
+            {% if label_keyring > 0 %}    
+				<tr class="service">
+					<td class="tableitem"><p class="itemtext">Label Keyring Set</p></td>
+                    <td class="tableitem"><p class="itemtext">7000</p></td>
+					<td class="tableitem"><p class="itemtext">{{ label_keyring }}</p></td>
+					<td class="tableitem"><p class="itemtext">{{ label_keyring_total }}</p></td>
+				</tr>
+            {% endif %}
+            {% if label_sticker > 0 %}
+                <tr class="service">
+					<td class="tableitem"><p class="itemtext">Label Sticker</p></td>
+                    <td class="tableitem"><p class="itemtext">5000</p></td>
+					<td class="tableitem"><p class="itemtext">{{ label_sticker }}</p></td>
+					<td class="tableitem"><p class="itemtext">{{ label_sticker_total }}</p></td>
+				</tr>
+            {% endif %}
+            {% if cheering_kit > 0 %}
+                <tr class="service">
+					<td class="tableitem"><p class="itemtext">Cheering Kit</p></td>
+                    <td class="tableitem"><p class="itemtext">7000</p></td>
+					<td class="tableitem"><p class="itemtext">{{ cheering_kit }}</p></td>
+					<td class="tableitem"><p class="itemtext">{{ cheering_kit_total }}</p></td>
+				</tr>
+            {% endif %}
+            {% if lholder > 0 %}
+                <tr class="service">
+					<td class="tableitem"><p class="itemtext">L Holder</p></td>
+                    <td class="tableitem"><p class="itemtext">5500</p></td>
+					<td class="tableitem"><p class="itemtext">{{ lholder }}</p></td>
+					<td class="tableitem"><p class="itemtext">{{ lholder_total }}</p></td>
+				</tr>
+            {% endif %}
+            {% if senru_label > 0 %}
+                <tr class="service">
+					<td class="tableitem"><p class="itemtext">Senru Label</p></td>
+                    <td class="tableitem"><p class="itemtext">2000</p></td>
+					<td class="tableitem"><p class="itemtext">{{ senru_label }}</p></td>
+					<td class="tableitem"><p class="itemtext">{{ senru_label_total }}</p></td>
+				</tr>
+            {% endif %}
+            {% if sendoh_label > 0 %}
+                <tr class="service">
+					<td class="tableitem"><p class="itemtext">Sendoh Label</p></td>
+                    <td class="tableitem"><p class="itemtext">2000</p></td>
+					<td class="tableitem"><p class="itemtext">{{ sendoh_label }}</p></td>
+					<td class="tableitem"><p class="itemtext">{{ sendoh_label_total }}</p></td>
+				</tr>
+            {% endif %}
+            {% if card_holder > 0 %}
+                <tr class="service">
+					<td class="tableitem"><p class="itemtext">Magsafe Cardholder</p></td>
+                    <td class="tableitem"><p class="itemtext">6700</p></td>
+					<td class="tableitem"><p class="itemtext">{{ card_holder }}</p></td>
+					<td class="tableitem"><p class="itemtext">{{ card_holder_total }}</p></td>
+				</tr>
+            {% endif %}
+            
+
+                <tr class="tableitem">
+                    <td> </td>
+                    <td class="total"><p1>QTY</p1></td></td>
+                    <td></td>
+                    <td class="total"><p1>{{ total_qty }}</p1></td>
+
+                </tr>
+                <tr class="tableitem">
+                    <td> </td>
+                    <td class="totalvalue"><p1>Total</p1></td>
+                    <td></td>
+                    <td class="totalvalue"><p1>{{ total }}</p1><td>
+                </tr>
+              <tr class="line"> </tr>
+
+						</table>
+					</div><!--End Table-->
+
+					<!-- 안내사항? -->
+                    <!-- <div id="legalcopy">
+						<p class="legal"><strong>감사합니다</strong>  <br/> 어쩌구저쩌구 
+						</p>
+                        <div class="logo"></div>
+					</div> -->
+    
+    <center id="pott">
+    </br> 
+        <div class="logo"></div></br>
+        </div>
+    </center><!--End pott-->                
+
+    </html>

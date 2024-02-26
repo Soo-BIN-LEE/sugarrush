@@ -1,0 +1,190 @@
+@page {
+  width: 60mm;
+  height: 180mm;
+  padding: 0.5mm;
+}
+#invoice-POS{
+    /* box-shadow: 0 0 1in -0.25in rgba(0,0,0,0.5); */
+    padding:5mm;
+    margin: 0 auto;
+    width: 50mm;
+    font-family: 'SCoreDream';;
+    background: #FFF;}
+
+   @font-face {
+    font-family: 'YClover-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/YClover-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'NeoDunggeunmo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.3/NeoDunggeunmo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+  @font-face {
+    font-family: 'SCoreDream';
+    font-weight: 100;
+    font-style: normal;
+    src: url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream1.woff2) format('woff2'),
+         url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream1.woff) format('woff');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'SCoreDream';
+    font-weight: 200;
+    font-style: normal;
+    src: url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream2.woff2) format('woff2'),
+         url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream2.woff) format('woff');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'SCoreDream';
+    font-weight: 300;
+    font-style: normal;
+    src: url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream3.woff2) format('woff2'),
+         url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream3.woff) format('woff');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'SCoreDream';
+    font-weight: 400;
+    font-style: normal;
+    src: url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream4.woff2) format('woff2'),
+         url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream4.woff) format('woff');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'SCoreDream';
+    font-weight: 500;
+    font-style: normal;
+    src: url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream5.woff2) format('woff2'),
+         url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream5.woff) format('woff');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'SCoreDream';
+    font-weight: 600;
+    font-style: normal;
+    src: url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream6.woff2) format('woff2'),
+         url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream6.woff) format('woff');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'SCoreDream';
+    font-weight: 700;
+    font-style: normal;
+    src: url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream7.woff2) format('woff2'),
+         url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream7.woff) format('woff');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'SCoreDream';
+    font-weight: 800;
+    font-style: normal;
+    src: url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream8.woff2) format('woff2'),
+         url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream8.woff) format('woff');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'SCoreDream';
+    font-weight: 900;
+    font-style: normal;
+    src: url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream9.woff2) format('woff2'),
+         url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream9.woff) format('woff');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'SCoreDream';
+    font-weight: 900;
+    font-style: normal;
+    src: url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream9.woff2) format('woff2'),
+         url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream9.woff) format('woff');
+    font-display: swap;
+}
+  
+  /* ::selection {backgroung: #f31544; color: #fff;} */
+  /* ::moz-selection {backghroung: #f31544; color: #fff} */
+  
+    
+  h2{font-size: .8em; font-family: 'YClover-Bold';}
+
+  p{
+    font-size: .7em;
+    color: #666;
+    line-height: 1.4em;
+  }
+  
+  p1{
+    font-size: .7em;
+    font-weight: 600;
+    line-height: 1.4em;
+    color: #222;
+  }
+
+  total{
+    font-size: .8em
+    color: #222
+
+  }
+   
+  #top, #mid,#bot{ /* Targets all id with 'col-' */
+    border-bottom: 1px solid #EEE;
+  }
+  
+  #top{min-height: 80px;}
+  #mid{min-height: 80px;} 
+  #bot{min-height: 50px;}
+  
+  #top .logo{
+    /* float: left; */
+    height: 80px;
+    width: 80px;
+    background: url(./outline_logo.png)no-repeat;
+    background-size: 80px 80px;
+    margin: 0 auto;
+  }
+
+  #pott .logo{
+    height: 50px;
+    width: 50px;
+    background: url(./miikisan_qr_code.png)no-repeat;
+    background-size: 50px 50px;
+    margin: 0 auto;
+  }
+
+  .info{
+    display: block;
+    /* float:left; */
+    margin-left: 0;
+  }
+
+  .title{
+    float: right;
+  }
+  .title p{text-align: right;} 
+
+  table{
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'NeoDunggeunmo'
+  }
+
+  .tabletitle{
+    padding: 5px;
+    font-size: .7em;
+    background: #EEE;
+  }
+
+  .service{border-bottom: 1px solid #EEE;}
+
+  .item{width: 20mm;} 
+
+  .line{border-bottom: 1px solid #EEE;}
+      
+  #legalcopy{
+    margin-top: 5mm;
+  }
+
+  /* <link rel="stylesheet" href="receipt_template.css"> */
